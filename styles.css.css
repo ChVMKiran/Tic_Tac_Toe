@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e1e;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+}
+
+p{
+    margin-top: 40px;
+    color: white;
+}
+
+.board{
+    height: 300px;
+    width: 300px;
+    background-color: brown;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.box{
+    margin: 0;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(255, 187, 0);
+    color: red;
+    font-size: larger;
+    display: flex;
+    border-radius: 10%;
+}
+
+.box.disabled {
+    background-color: rgb(207, 144, 27); 
+}
+
+#rstbtn{
+    margin: 20px;
+    padding :10px;
+    background-color: red;
+    color:white;
+    border-color: rgb(206, 2, 2);
+    border-radius: 10%;
+}
+
+#msg{
+    color: white;
+}
+
+.scoreboard{
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: white;
+}
+
+#scores{
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+}
+
+#x,#o{
+    border: 1px solid white;
+    border-radius: 10%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #cfcfcf;
+    color: black;
+}
+
+#names{
+    display: flex;
+    width: 300px;
+    margin-left: 15px;
+    justify-content: center;
+    gap:75px;
+}
